@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'AI Course - Stát se nenahraditelným',
@@ -13,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="cs">
+      <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
       <body>{children}</body>
     </html>
   )
